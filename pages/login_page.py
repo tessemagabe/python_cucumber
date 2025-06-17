@@ -1,3 +1,19 @@
+from pages.base_page import BasePage
+class LoginPage(BasePage):
+    def __init__(self, driver):
+        self.driver = driver
+        self.locator = {
+            "username_input": ("NAME", "username"),
+            "password_input": ("NAME", "password"),
+            "login_button": ("XPATH", "//button[@type='submit']"),
+            "error_message": ("CSS", ".oxd-alert-content-text"),
+            "dashboard_title": ("XPATH", "//h6[text()='Dashboard']"),
+        }
+        super().__init__(driver)
+        self.initialize_elements()
+
+
+"""
 from pages.base_page import BasePage  # ✅ Make sure path is correct
 
 class LoginPage(BasePage):
@@ -26,7 +42,7 @@ class LoginPage(BasePage):
     def get_error_text(self):
         return self.error_message.text
 
-
+"""
 
 
 """
