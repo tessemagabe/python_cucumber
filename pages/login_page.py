@@ -10,7 +10,7 @@ class LoginPage(BasePage):
             "dashboard_title": ("XPATH", "//h6[text()='Dashboard']"),
         }
         super().__init__(driver)
-        self.initialize_elements()
+        #self.initialize_elements()
 
 
 """

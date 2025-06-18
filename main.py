@@ -1,7 +1,7 @@
 import subprocess
 
 if __name__ == "__main__":
-    subprocess.run(["behave", "-D", "browser=firefox", "-f", "pretty", "--tags=@positive,@negative"])
+    subprocess.run(["behave", "-D", "browser=edge", "-f", "pretty", "--tags=@positive,@negative"])
 
 
 """

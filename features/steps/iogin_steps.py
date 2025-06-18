@@ -4,8 +4,7 @@ from pages.login_page import LoginPage  # Adjust if the path is different
 @given("the user is on the OrangeHRM login page")
 def step_given_login_page(context):
     context.login_page = LoginPage(context.driver)
-    # Assuming the driver already navigated to the login page in before_scenario
-    context.login_page.init_elements()
+    # No need to manually initialize elements—PageFactory handles this internally
 
 @when('the user enters username "{username}" and password "{password}"')
 def step_when_enter_credentials(context, username, password):

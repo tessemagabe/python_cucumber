@@ -28,8 +28,20 @@ jobs:
         run: |
           pytest --alluredir=allure-results
 
+      - name: Inspect Allure Results
+        run: |
+          if [ -d "allure-results" ]; then
+            echo "Allure results exist. ✅"
+            ls -l allure-results
+          else
+            echo "❌ Allure results directory not found"
+            exit 1
+          fi
+
       - name: Upload Allure Results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results
+
