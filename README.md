@@ -1,4 +1,4 @@
-<h2>🌿 python_cucumber_bdd</h2>
+<h2> python_cucumber_bdd</h2>
 
 <p><strong>python_cucumber_bdd</strong> is a behavior-driven development (BDD) automation framework built with <strong>Python</strong>, <strong>Behave</strong>, and <strong>Selenium WebDriver</strong>, seamlessly integrated with <strong>Allure Reports</strong> for rich, visual test reporting.</p>
 
